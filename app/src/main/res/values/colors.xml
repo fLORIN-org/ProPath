@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Цвета из Design System ProPath -->
+    <color name="colorBackground">#111417</color>
+    <color name="colorSurface">#1d2023</color>
+    <color name="colorSurfaceHigh">#282a2e</color>
+    <color name="colorPrimary">#00d4ff</color>      <!-- Cyan -->
+        <color name="colorPrimaryVariant">#0099bb</color>
+    <color name="colorSecondary">#7c3aed</color>    <!-- Purple -->
+    <color name="colorOnBackground">#e1e2e7</color>
+    <color name="colorOnSurface">#e1e2e7</color>
+    <color name="colorOnSurfaceVariant">#bbc9cf</color>
+    <color name="colorError">#ffb4ab</color>
+    <color name="colorOutline">#3c494e</color>
+    <color name="colorTertiary">#ff2e63</color>     <!-- Accent pink (для ошибок) -->
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    android:gravity="center">
+
+    <!-- Иконка экрана онбординга -->
+    <TextView
+        android:id="@+id/tvOnboardingIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🎮"
+        android:textSize="64sp"
+        android:layout_marginBottom="@dimen/spacing_lg" />
+
+    <!-- Заголовок -->
+    <TextView
+        android:id="@+id/tvOnboardingTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:paddingHorizontal="@dimen/spacing_xl"
+        android:layout_marginBottom="@dimen/spacing_md" />
+
+    <!-- Описание -->
+    <TextView
+        android:id="@+id/tvOnboardingDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/colorOnSurfaceVariant"
+        android:gravity="center"
+        android:paddingHorizontal="@dimen/spacing_xl"
+        android:layout_marginBottom="@dimen/spacing_xl" />
+
+    <!-- Индикатор страниц -->
+    <LinearLayout
+        android:id="@+id/llDots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/spacing_xl" />
+
+    <!-- Кнопка -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnOnboardingNext"
+        style="@style/Widget.ProPath.Button"
+        android:layout_width="200dp"
+        android:layout_height="@dimen/touch_target"
+        android:text="@string/btn_next" />
+
+</LinearLayout>

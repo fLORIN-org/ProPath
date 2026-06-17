@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    android:padding="@dimen/spacing_md">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Мой прогресс"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorOnBackground"
+        android:layout_marginBottom="@dimen/spacing_md" />
+
+    <!-- Форма добавления результата -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/colorSurface"
+        app:cardCornerRadius="@dimen/card_radius"
+        app:cardElevation="0dp"
+        android:layout_marginBottom="@dimen/spacing_md">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_md">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Записать результат"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorOnSurface"
+                android:layout_marginBottom="@dimen/spacing_sm" />
+
+            <!-- Победа / Поражение -->
+            <RadioGroup
+                android:id="@+id/rgResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/spacing_sm">
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/rbWin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Победа"
+                    android:textColor="@color/colorOnSurface"
+                    android:checked="true" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/rbLoss"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Поражение"
+                    android:textColor="@color/colorOnSurface" />
+
+            </RadioGroup>
+
+            <!-- Убийства -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilKills"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Убийства"
+                android:layout_marginBottom="@dimen/spacing_sm"
+                app:boxStrokeColor="@color/colorPrimary"
+                app:hintTextColor="@color/colorOnSurfaceVariant">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etKills"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:textColor="@color/colorOnSurface" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Смерти -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilDeaths"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Смерти"
+                android:layout_marginBottom="@dimen/spacing_md"
+                app:boxStrokeColor="@color/colorPrimary"
+                app:hintTextColor="@color/colorOnSurfaceVariant">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etDeaths"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:textColor="@color/colorOnSurface" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSaveResult"
+                style="@style/Widget.ProPath.Button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/touch_target"
+                android:text="Сохранить" />
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Список матчей -->
+    <TextView
+        android:id="@+id/tvEmptyProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Нет записей. Добавь свой первый матч!"
+        android:textColor="@color/colorOnSurfaceVariant"
+        android:gravity="center"
+        android:padding="@dimen/spacing_lg"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMatches"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

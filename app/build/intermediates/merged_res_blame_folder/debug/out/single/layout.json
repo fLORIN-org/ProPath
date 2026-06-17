@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "com.propath.app-mergeDebugResources-54:/layout/fragment_progress.xml",
+        "source": "com.propath.app-main-57:/layout/fragment_progress.xml"
+    },
+    {
+        "merged": "com.propath.app-mergeDebugResources-54:/layout/activity_main.xml",
+        "source": "com.propath.app-main-57:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.propath.app-mergeDebugResources-54:/layout/activity_onboarding.xml",
+        "source": "com.propath.app-main-57:/layout/activity_onboarding.xml"
+    },
+    {
+        "merged": "com.propath.app-mergeDebugResources-54:/layout/activity_login.xml",
+        "source": "com.propath.app-main-57:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.propath.app-mergeDebugResources-54:/layout/fragment_profile.xml",
+        "source": "com.propath.app-main-57:/layout/fragment_profile.xml"
+    },
+    {
+        "merged": "com.propath.app-mergeDebugResources-54:/layout/item_match.xml",
+        "source": "com.propath.app-main-57:/layout/item_match.xml"
+    },
+    {
+        "merged": "com.propath.app-mergeDebugResources-54:/layout/fragment_home.xml",
+        "source": "com.propath.app-main-57:/layout/fragment_home.xml"
+    }
+]

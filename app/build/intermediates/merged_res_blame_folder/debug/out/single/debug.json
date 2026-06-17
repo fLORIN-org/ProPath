@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "com.propath.app-merged_res-55:/layout_fragment_progress.xml.flat",
+        "source": "com.propath.app-main-57:/layout/fragment_progress.xml"
+    },
+    {
+        "merged": "com.propath.app-merged_res-55:/layout_activity_login.xml.flat",
+        "source": "com.propath.app-main-57:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.propath.app-merged_res-55:/drawable_bg_result_badge.xml.flat",
+        "source": "com.propath.app-main-57:/drawable/bg_result_badge.xml"
+    },
+    {
+        "merged": "com.propath.app-merged_res-55:/menu_bottom_nav_menu.xml.flat",
+        "source": "com.propath.app-main-57:/menu/bottom_nav_menu.xml"
+    },
+    {
+        "merged": "com.propath.app-merged_res-55:/layout_activity_main.xml.flat",
+        "source": "com.propath.app-main-57:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.propath.app-merged_res-55:/layout_fragment_home.xml.flat",
+        "source": "com.propath.app-main-57:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "com.propath.app-merged_res-55:/navigation_nav_graph.xml.flat",
+        "source": "com.propath.app-main-57:/navigation/nav_graph.xml"
+    },
+    {
+        "merged": "com.propath.app-merged_res-55:/layout_fragment_profile.xml.flat",
+        "source": "com.propath.app-main-57:/layout/fragment_profile.xml"
+    },
+    {
+        "merged": "com.propath.app-merged_res-55:/layout_activity_onboarding.xml.flat",
+        "source": "com.propath.app-main-57:/layout/activity_onboarding.xml"
+    },
+    {
+        "merged": "com.propath.app-merged_res-55:/drawable_bg_result_loss.xml.flat",
+        "source": "com.propath.app-main-57:/drawable/bg_result_loss.xml"
+    },
+    {
+        "merged": "com.propath.app-merged_res-55:/layout_item_match.xml.flat",
+        "source": "com.propath.app-main-57:/layout/item_match.xml"
+    }
+]
